@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Youtube.com Clone</title>
-    <link rel="stylesheet" href="video.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,14 +13,26 @@
   <body>
     <div class="header">
       <div class="left-section">
-        left section
+        <img class="hamburger-menu" src="Icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="Icons/youtube-logo.svg">
       </div>
       <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
+        <input class="search-bar" type="text" placeholder="Szukaj">
+        <button class="search-button">
+          <img class="search-icon" src="Icons/search.svg">
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="Icons/voice-search-icon.svg">
+        </button>
       </div>
       <div class="right-section">
-        right section
+        <img class="upload-icon" src="Icons/upload.svg">
+        <img class="notifications-icon" src="Icons/notifications.svg">
+        <img class="current-user-picture" src="channel-pictures/h-profile.jpeg">
       </div>
+    </div>
+    <div class="sidebar">
+      sidebar
     </div>
     <div class="video-grid">
       <div class="video-preview">
