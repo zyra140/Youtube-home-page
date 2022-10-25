@@ -1,5 +1,6 @@
 .thumbnail {
   width: 100%; 
+  border-radius: 13px;
 }
 
 .video-title {
@@ -21,8 +22,16 @@
   grid-template-columns: 50px 1fr;
 }
 
+.video-info-grid p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .profile-picture {
-  width: 40px;
+  width: 35px;
   border-radius: 25px;
 }
 
@@ -50,9 +59,11 @@
 
 .video-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+  padding-right: 40px;
+  padding-left: 16px;
 }
 
 .video-time {
@@ -63,10 +74,10 @@
   right: 5px;
   font-family: Roboto, Arial;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
   padding-left: 4px;
   padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   border-radius: 4px;
 }
