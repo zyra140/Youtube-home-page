@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/film-type-bar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="Icons/hamburger-menu.svg">
         <img class="youtube-logo" src="Icons/youtube-logo.svg">
@@ -23,6 +24,7 @@
         </button>
         <button class="search-button">
           <img class="search-icon" src="Icons/search.svg">
+          <div class="tooltip">Szukaj</div>
         </button>
         <button class="voice-search-button">
           <img class="voice-search-icon" src="Icons/voice-search-icon.svg">
@@ -36,8 +38,8 @@
         </div>
         <img class="current-user-picture" src="channel-pictures/h-profile.jpeg">
       </div>
-    </div>
-    <div class="sidebar">
+    </header>
+    <nav class="sidebar">
       <div class="sidebar-top-section">
         <div class="sidebar-link">
           <img src="Icons/home.svg">
@@ -242,203 +244,219 @@
           &#169; 2022 Google LLC
         </div>
       </div>
-    </div>
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720_live.webp">
-          <div class="video-time">2:12:10</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/unnamed.jpeg">
+    </nav>
+    <nav class="film-type-bar">
+      <div>Wszystko</div>
+      <div>Na zywo</div>
+      <div>Gry</div>
+      <div>Playlisty YouTube Mix</div>
+      <div>Muzyka</div>
+      <div>Grand Theft Auto Online</div>
+      <div>Piłka nozna</div>
+      <div>Przygodowe gry akcji</div>
+      <div>Sportowe gry video</div>
+      <div>Ostatnio przesłane</div>
+      <div>Obejrzane</div>
+      <div>Nowe rekomndacje</div>
+    </nav>
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/hq720_live.webp">
+            <div class="video-time">2:12:10</div>
           </div>
-          <div>
-            <p class="video-title">
-              FAME 16 CAGE: Dzinold, Tromba, Bandura (prowadzi Wardęga)
-            </p>
-            <p class="video-author">
-              FAME MMA &#10004;
-            </p>
-            <p class="video-stats">
-              64 tys. oglądających
-            </p>
-            <p class="video-live">
-              &#9737; NA ZYWO
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720.webp">
-          <div class="video-time">2:12:10</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channels4_profile.jpeg">
-          </div>
-          <div>
-            <p class="video-title">
-              MATEUSZ SOCHA W AFERKACH (o relacji z Paczesiem, Nitrozyniak, Natan, Masza, Fagata)
-            <p class="video-author">
-              Aferki
-            </p>
-            <p class="video-stats">
-              455 tys. wyświetleń &#183;
-            </p>
-            <p class="video-author">
-              Transmisja odbyła się 6 dni temu
-            </p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/unnamed.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                FAME 16 CAGE: Dzinold, Tromba, Bandura (prowadzi Wardęga)
+              </p>
+              <p class="video-author">
+                FAME MMA &#10004;
+              </p>
+              <p class="video-stats">
+                64 tys. oglądających
+              </p>
+              <p class="video-live">
+                &#9737; NA ZYWO
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720-kopia.webp">
-          <div class="video-time">0:48</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channels4_profile-kopia.jpeg">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/hq720.webp">
+            <div class="video-time">2:12:10</div>
           </div>
-          <div>
-            <p class="video-title">
-              Bagieta spina do Don Kasjo na konferecnji
-            </p>
-            <p class="video-author">
-              SOBOM
-            </p>
-            <p class="video-stats">
-              9 tys. wyświetleń &#183;
-            </p>
-            <p class="video-author">
-              2 godziny temu
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720landri.webp">
-          <div class="video-time">10:19</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/landri.jpeg">
-          </div>
-          <div>
-            <p class="video-title">
-              Ederson ASYSTOWAŁ! Haaland SHOW! DRAMAT Varane! Pierwszy GOL Casemiro dla Manchesteru
-            <p class="video-author">
-              LANDRI &#10004;
-            </p>
-            <p class="video-stats">
-              98 tys. wyświetleń &#183;
-            </p>
-            <p class="video-author">
-              16 godzin temu
-            </p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channels4_profile.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                MATEUSZ SOCHA W AFERKACH (o relacji z Paczesiem, Nitrozyniak, Natan, Masza, Fagata)
+              <p class="video-author">
+                Aferki
+              </p>
+              <p class="video-stats">
+                455 tys. wyświetleń &#183;
+              </p>
+              <p class="video-author">
+                Transmisja odbyła się 6 dni temu
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720it.webp">
-          <div class="video-time">16:50</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channels5_profile.jpeg">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/hq720-kopia.webp">
+            <div class="video-time">0:48</div>
           </div>
-          <div>
-            <p class="video-title">
-              PIERWSZY MIESIĄC W BRANZY IT
-            </p>
-            <p class="video-author">
-              Programistaforntend
-            </p>
-            <p class="video-stats">
-              2,3 tys. wyświetleń &#183;
-            </p>
-            <p class="video-author">
-              rok temu
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/hq720NITRO.webp">
-          <div class="video-time">22:11</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/NITRO.jpeg">
-          </div>
-          <div>
-            <p class="video-title">
-              DONEJTUJEMY POLSKICH STREAMÓW - 50 ZŁ JEDNA POMPA, MARCHEWKA DO BUZI - MEDUSA, MRDZINOLD, NAVCIA
-            <p class="video-author">
-              TheNitroZyniak &#10004;
-            </p>
-            <p class="video-stats">
-              41 tys. wyświetleń &#183;
-            </p>
-            <p class="video-author">
-              1 godzinę temu
-            </p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channels4_profile-kopia.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                Bagieta spina do Don Kasjo na konferecnji
+              </p>
+              <p class="video-author">
+                SOBOM
+              </p>
+              <p class="video-stats">
+                9 tys. wyświetleń &#183;
+              </p>
+              <p class="video-author">
+                2 godziny temu
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/budo.webp">
-          <div class="video-time">19:18</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/budo.jpeg">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/hq720landri.webp">
+            <div class="video-time">10:19</div>
           </div>
-          <div>
-            <p class="video-title">
-              Kierownik Budowy - 20 lat doświadczenia na budowie
-            <p class="video-author">
-             CONCRETniE Na Budowie
-            </p>
-            <p class="video-stats">
-              12 tys. wyświetleń &#183;
-            </p>
-            <p class="video-author">
-              2 lata temu
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/kopara.webp">
-          <div class="video-time">16:03</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/kopara.jpeg">
-          </div>
-          <div>
-            <p class="video-title">
-              EXCAVATORS - Bagger - Koparki CAT 324 D - Bud. stadionu ŁKS Łódź
-            <p class="video-author">
-              Garden - SG
-            </p>
-            <p class="video-stats">
-              103 tys. wyświetleń &#183;
-            </p>
-            <p class="video-author">
-              8 lat temu
-            </p>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/landri.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                Ederson ASYSTOWAŁ! Haaland SHOW! DRAMAT Varane! Pierwszy GOL Casemiro dla Manchesteru
+              <p class="video-author">
+                LANDRI &#10004;
+              </p>
+              <p class="video-stats">
+                98 tys. wyświetleń &#183;
+              </p>
+              <p class="video-author">
+                16 godzin temu
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/hq720it.webp">
+            <div class="video-time">16:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channels5_profile.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                PIERWSZY MIESIĄC W BRANZY IT
+              </p>
+              <p class="video-author">
+                Programistaforntend
+              </p>
+              <p class="video-stats">
+                2,3 tys. wyświetleń &#183;
+              </p>
+              <p class="video-author">
+                rok temu
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/hq720NITRO.webp">
+            <div class="video-time">22:11</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/NITRO.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                DONEJTUJEMY POLSKICH STREAMÓW - 50 ZŁ JEDNA POMPA, MARCHEWKA DO BUZI - MEDUSA, MRDZINOLD, NAVCIA
+              <p class="video-author">
+                TheNitroZyniak &#10004;
+              </p>
+              <p class="video-stats">
+                41 tys. wyświetleń &#183;
+              </p>
+              <p class="video-author">
+                1 godzinę temu
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/budo.webp">
+            <div class="video-time">19:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/budo.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                Kierownik Budowy - 20 lat doświadczenia na budowie
+              <p class="video-author">
+               CONCRETniE Na Budowie
+              </p>
+              <p class="video-stats">
+                12 tys. wyświetleń &#183;
+              </p>
+              <p class="video-author">
+                2 lata temu
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/kopara.webp">
+            <div class="video-time">16:03</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/kopara.jpeg">
+            </div>
+            <div>
+              <p class="video-title">
+                EXCAVATORS - Bagger - Koparki CAT 324 D - Bud. stadionu ŁKS Łódź
+              <p class="video-author">
+                Garden - SG
+              </p>
+              <p class="video-stats">
+                103 tys. wyświetleń &#183;
+              </p>
+              <p class="video-author">
+                8 lat temu
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

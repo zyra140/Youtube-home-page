@@ -52,7 +52,6 @@
 }
 
 .search-bar::placeholder {
-  font-family: Roboto, Arial;
   font-size: 16px;
   padding-left: 14px;
   color: rgb(154, 154, 154);
@@ -80,7 +79,7 @@
 .search-button {
   height: 40px;
   width: 64px;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(246, 246, 246);
   border-width: 1px;
   border-style: solid;
   border-color: rgb(200, 196, 196);
@@ -88,6 +87,31 @@
   border-bottom-right-radius: 40px;
   margin-left: -1px;
   margin-right: 8px;
+  position: relative;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: 0px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  z-index: 2;
+  bottom: -15px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
 }
 
 .search-icon {
@@ -139,7 +163,6 @@ margin-top: 4px;
   right: -8px;
   background-color: rgb(208, 0, 0);
   color: white;
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 200;
   padding-left: 4.7px;

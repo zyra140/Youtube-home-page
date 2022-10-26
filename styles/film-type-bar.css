@@ -1,0 +1,36 @@
+.film-type-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  align-items: center;
+  background-color: white;
+  top: 54px;
+  left: 263px;
+  height: 60px;
+  padding-left: 1px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.film-type-bar div {
+  margin-right: 12px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.film-type-bar div:hover {
+  background-color: rgba(0, 0, 0, 0.100);
+  transition: background-color 0.3s;
+}
